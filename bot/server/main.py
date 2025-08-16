@@ -11,6 +11,10 @@ bp = Blueprint('main', __name__)
 async def home():
     return redirect(f'https://t.me/{Telegram.BOT_USERNAME}')
 
+@bp.route('/status')
+async def ping():
+    return "Alive!"
+
 @bp.route('/dl/<int:file_id>')
 async def transmit_file(file_id):
     file = await get_message(message_id=int(file_id)) or abort(404)
@@ -81,5 +85,6 @@ async def stream_file(file_id):
 @bp.route('/file/<int:file_id>')
 async def file_deeplink(file_id):
     code = request.args.get('code') or abort(401)
+
 
     return redirect(f'https://t.me/{Telegram.BOT_USERNAME}?start=file_{file_id}_{code}')
