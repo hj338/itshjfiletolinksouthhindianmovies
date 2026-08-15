@@ -5,13 +5,13 @@ class Telegram:
     API_HASH = env.get("TELEGRAM_API_HASH", "6adf3d3cc76505f893fc61ca4666a592")
     OWNER_ID = int(env.get("OWNER_ID", 6026244374))
     ALLOWED_USER_IDS = env.get("ALLOWED_USER_IDS", "6026244374").split()
-    BOT_USERNAME = env.get("TELEGRAM_BOT_USERNAME", "itshjfiletolinkbot")
-    BOT_TOKEN = env.get("TELEGRAM_BOT_TOKEN", "7929561832:AAE3oEgrDEj5sXgUToGAT4V66ImUhhFW_qc")
-    CHANNEL_ID = int(env.get("TELEGRAM_CHANNEL_ID", -1002358425700))
+    BOT_USERNAME = env.get("TELEGRAM_BOT_USERNAME", "itshjfiletolinksouthhindimovibot")
+    BOT_TOKEN = env.get("TELEGRAM_BOT_TOKEN", "8864505552:AAHK0BX9PI477nPu2A7Mq4x3zyS_1hLfjvI")
+    CHANNEL_ID = int(env.get("TELEGRAM_CHANNEL_ID", -1004207509675))
     SECRET_CODE_LENGTH = int(env.get("SECRET_CODE_LENGTH", 12))
 
 class Server:
-    BASE_URL = env.get("BASE_URL", "https://itshjfiletolink.onrender.com")
+    BASE_URL = env.get("BASE_URL", "https://itshjfiletolinksouthhindianmovies.onrender.com")
     BIND_ADDRESS = env.get("BIND_ADDRESS", "0.0.0.0")
     PORT = int(env.get("PORT", 8080))
 
